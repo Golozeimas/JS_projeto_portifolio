@@ -1,0 +1,92 @@
+#projetos::before {
+  left: 0;
+  top: 8rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  background: rgba(4, 4, 4, 0.9);
+}
+
+.project-thumb {
+  display: grid;
+  min-height: 145px;
+  place-items: center;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 45%),
+    var(--surface-soft);
+}
+
+.project-thumb-2 {
+  background:
+    linear-gradient(135deg, rgba(198, 120, 221, 0.18), transparent 42%),
+    var(--surface-soft);
+}
+
+.project-thumb-3 {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent 36%),
+    var(--surface-soft);
+}
+
+.project-thumb-icon {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.83rem;
+}
+
+.project-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.project-title {
+  margin-bottom: 0.8rem;
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.project-desc {
+  margin-bottom: 1.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.project-link {
+  width: fit-content;
+  margin-top: auto;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--accent);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+  background: rgba(198, 120, 221, 0.12);
+  transform: translateY(-2px);
+}
