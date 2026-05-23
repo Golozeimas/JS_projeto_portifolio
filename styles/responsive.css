@@ -13,10 +13,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(3, minmax(110px, 1fr));
-  }
-
   .about-visual {
     justify-content: start;
   }
@@ -82,13 +78,8 @@
     display: none;
   }
 
-  .projects-grid,
-  .skills-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
-  }
-
-  .skill-card {
-    min-height: 104px;
   }
 
   footer {
